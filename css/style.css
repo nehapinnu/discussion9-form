@@ -1,0 +1,94 @@
+  /* Create an accessible color palette using var()function */
+  /* https://www.w3schools.com/css/css3_variables.asp */
+  
+  form {
+    /* display: grid; */
+    /* grid-template-columns: 50% 50%; */
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    width:70%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #702082;
+    background: #eedef5;
+  }
+
+  .radio {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* background: #575294; */
+    color: #702082;
+  }
+
+  #name {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    /* background: #f1d7fd; */
+    color: #9B9A6D;
+  }
+
+  #message {
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+  }
+
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .skip {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: white;
+    padding: 8px 15px;
+    z-index: 100;
+    transition: top 0.3s ease;
+  }
+
+  .nameBox {
+    border-radius: 10px;
+    border-color: #000;
+    border-width: 2px;
+    margin-top: 5px;
+  }
+
+  .skip:focus {
+    top: 0;
+  }
+
+  .names {
+    display: inline;
+  }
+
+  .resetButton {
+    margin-top: 7px;
+  }
+
